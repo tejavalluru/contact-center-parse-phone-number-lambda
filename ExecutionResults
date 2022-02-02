@@ -1,0 +1,28 @@
+Response
+{
+  "errorType": "Runtime.ImportModuleError",
+  "errorMessage": "Error: Cannot find module '@aws-sdk/client-pinpoint'\nRequire stack:\n- /var/task/pinClient.js\n- /var/task/index.js\n- /var/runtime/UserFunction.js\n- /var/runtime/index.js",
+  "trace": [
+    "Runtime.ImportModuleError: Error: Cannot find module '@aws-sdk/client-pinpoint'",
+    "Require stack:",
+    "- /var/task/pinClient.js",
+    "- /var/task/index.js",
+    "- /var/runtime/UserFunction.js",
+    "- /var/runtime/index.js",
+    "    at _loadUserApp (/var/runtime/UserFunction.js:202:13)",
+    "    at Object.module.exports.load (/var/runtime/UserFunction.js:242:17)",
+    "    at Object.<anonymous> (/var/runtime/index.js:43:30)",
+    "    at Module._compile (internal/modules/cjs/loader.js:1085:14)",
+    "    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+    "    at Module.load (internal/modules/cjs/loader.js:950:32)",
+    "    at Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+    "    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+    "    at internal/main/run_main_module.js:17:47"
+  ]
+}
+
+Function Logs
+START RequestId: c85a1200-bf2d-4009-a2fd-cb1eea2b79f6 Version: $LATEST
+2022-02-02T01:02:54.538Z	undefined	ERROR	Uncaught Exception 	{"errorType":"Runtime.ImportModuleError","errorMessage":"Error: Cannot find module '@aws-sdk/client-pinpoint'\nRequire stack:\n- /var/task/pinClient.js\n- /var/task/index.js\n- /var/runtime/UserFunction.js\n- /var/runtime/index.js","stack":["Runtime.ImportModuleError: Error: Cannot find module '@aws-sdk/client-pinpoint'","Require stack:","- /var/task/pinClient.js","- /var/task/index.js","- /var/runtime/UserFunction.js","- /var/runtime/index.js","    at _loadUserApp (/var/runtime/UserFunction.js:202:13)","    at Object.module.exports.load (/var/runtime/UserFunction.js:242:17)","    at Object.<anonymous> (/var/runtime/index.js:43:30)","    at Module._compile (internal/modules/cjs/loader.js:1085:14)","    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","    at Module.load (internal/modules/cjs/loader.js:950:32)","    at Function.Module._load (internal/modules/cjs/loader.js:790:12)","    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)","    at internal/main/run_main_module.js:17:47"]}
+2022-02-02T01:02:56.239Z	undefined	ERROR	Uncaught Exception 	{"errorType":"Runtime.ImportModuleError","errorMessage":"Error: Cannot find module '@aws-sdk/client-pinpoint'\nRequire stack:\n- /var/task/pinClient.js\n- /var/task/index.js\n- /var/runtime/UserFunction.js\n- /var/runtime/index.js","stack":["Runtime.ImportModuleError: Error: Cannot find module '@aws-sdk/client-pinpoint'","Require stack:","- /var/task/pinClient.js","- /var/task/index.js","- /var/runtime/UserFunction.js","- /var/runtime/index.js","    at _loadUserApp (/var/runtime/UserFunction.js:202:13)","    at Object.module.exports.load (/var/runtime/UserFunction.js:242:17)","    at Object.<anonymous> (/var/runtime/index.js:43:30)","    at Module._compile (internal/modules/cjs/loader.js:1085:14)","    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)","    at Module.load (internal/modules/cjs/loader.js:950:32)","    at Function.Module._load (internal/modules/cjs/loader.js:790:12)","    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)","    at internal/main/run_main_module.js:17:47"]}
+END RequestId: c85a1200-bf2d-4009-a2fd-cb1eea2b79f6
